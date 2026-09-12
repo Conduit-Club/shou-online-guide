@@ -3,6 +3,6 @@
   "framework": null,
   "installCommand": "bash scripts/vercel-install.sh",
   "buildCommand": ".vercel/pixi/bin/pixi run --locked build",
-  "outputDirectory": "docs/.vuepress/dist",
-  "devCommand": "pixi run dev"
+  "outputDirectory": "build",
+  "devCommand": "pixi run --locked dev"
 }

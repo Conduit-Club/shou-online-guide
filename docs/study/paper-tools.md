@@ -1,12 +1,13 @@
 ---
-sidebarDepth: 0
+id: paper-tools
+slug: /study/paper-tools.html
 ---
 
 # 论文实用工具
 
 课程论文和准备投稿的论文，用的工具不太一样。课程作业通常只需要按老师要求写清楚、引好文献，提交前做一次相似度自查；准备正式投稿，则要从检索、文献管理、写作到选刊一步步来，而且每一步都应该和指导老师保持沟通。
 
-::: tip 核验时间
+:::tip[核验时间]
 最近核验：**2026-09-11**。
 :::
 
@@ -124,4 +125,4 @@ LetPub 可以按刊名、ISSN 和研究方向查影响因子、分区、投稿�
 - [上海海洋大学食品学院研究生科研成果加分规定](https://spxy.shou.edu.cn/_upload/article/files/0a/c4/0904f64a4735ad8fb1a54c4b80cb/b786608c-933a-4986-9f48-9298255b8aa8.pdf)：其中注明 JCR 分区以图书馆 Web of Science 数据库为准。
 - [学校 VPN 使用说明](https://xjzx.shou.edu.cn/2019/1012/c12937a253578/page.htm)：说明可通过学校 SSL VPN 在校外访问图书馆资源。
 
-还在找课程复习资料？返回 [刷 GPA 实用网站](./learning-sites.md)，或查看 [课程、学分与 GPA](./courses-and-gpa.md)。
+还在找课程复习资料？返回 [刷 GPA 实用网站](/study/learning-sites.html)，或查看 [课程、学分与 GPA](/study/courses-and-gpa.html)。

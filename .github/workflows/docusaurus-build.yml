@@ -1,0 +1,37 @@
+name: Build with Pixi
+
+on:
+  push:
+    branches: [master, dev]
+  pull_request:
+    branches: [master, dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: prefix-dev/setup-pixi@v0.9.0
+        with:
+          pixi-version: v0.76.2
+          cache: true
+          locked: true
+      - name: Run GPA tests
+        run: pixi run --locked test-gpa
+      - name: Build Docusaurus site
+        run: pixi run --locked build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: shou-online-build
+          path: build/
+          include-hidden-files: true
+          if-no-files-found: error
+
+# Vercel's Git integration handles deployment:
+# master -> Production, dev / pull requests -> Preview.

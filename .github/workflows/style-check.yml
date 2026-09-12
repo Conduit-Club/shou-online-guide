@@ -25,7 +25,7 @@ jobs:
         id: style
         continue-on-error: true
         run: |
-          changed_files=$(git diff --name-only --diff-filter=ACMRT "origin/${{ github.base_ref }}...HEAD" | grep -E '\.(md|json|js|mjs|ts|scss|yaml|yml|toml)$' || true)
+          changed_files=$(git diff --name-only --diff-filter=ACMRT "origin/${{ github.base_ref }}...HEAD" | grep -E '\.(md|json|js|jsx|mjs|ts|tsx|scss|css|yaml|yml|toml)$' || true)
           if [ -z "$changed_files" ]; then
             exit 0
           fi

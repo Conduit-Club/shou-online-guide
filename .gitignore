@@ -1,6 +1,5 @@
 # Src Repo
 .DS_Store
-docs/.vuepress/dist
 node_modules/
 .vscode
 # Package management
@@ -9,5 +8,8 @@ yarn.lock
 .pixi/
 .vercel/
 .backups/
-docs/.vuepress/.cache/
-docs/.vuepress/.temp/
+# Docusaurus build output
+build/
+.docusaurus/
+# Legacy VuePress output/source during migration
+docs/.vuepress/

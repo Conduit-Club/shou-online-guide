@@ -1,33 +1,39 @@
 {
+  "name": "shou-online-manual",
   "private": true,
+  "description": "上海海洋大学校园信息手册 Docusaurus 文档站。",
   "scripts": {
     "fmt": "oxfmt",
     "fmt:check": "oxfmt --check",
     "lint": "oxlint",
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs",
-    "docs:clean": "rm -rf docs/.vuepress/.cache docs/.vuepress/.temp docs/.vuepress/dist"
+    "start": "docusaurus start --host 0.0.0.0 --port 4173",
+    "build": "docusaurus build",
+    "serve": "docusaurus serve --host 0.0.0.0 --port 8080",
+    "clear": "docusaurus clear",
+    "docs:dev": "pnpm run start",
+    "docs:build": "pnpm run build",
+    "docs:clean": "pnpm run clear",
+    "test:gpa": "node --test scripts/gpa.test.mjs"
   },
   "dependencies": {
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/plugin-content-docs": "3.10.2",
+    "@docusaurus/plugin-pwa": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@docusaurus/theme-common": "3.10.2",
+    "@easyops-cn/docusaurus-search-local": "^0.55.3",
+    "@mdx-js/react": "^3.1.1",
     "@protomaps/basemaps": "^5.7.2",
+    "clsx": "^2.1.1",
     "maplibre-gl": "^6.7.0",
     "pmtiles": "^4.5.0",
-    "vue": "^3.5.41"
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
   },
   "devDependencies": {
-    "@vuepress/bundler-vite": "next",
-    "@vuepress/cli": "next",
-    "@vuepress/plugin-git": "next",
-    "@vuepress/plugin-markdown-image": "2.0.0-rc.134",
-    "@vuepress/plugin-pwa": "next",
-    "@vuepress/plugin-search": "next",
-    "@vuepress/plugin-toc": "next",
-    "@vuepress/theme-default": "next",
     "oxfmt": "^0.66.0",
-    "oxlint": "^1.82.0",
-    "sass-embedded": "^1.103.1",
-    "serve": "14.2.6",
-    "vuepress": "next"
+    "oxlint": "^1.82.0"
   },
   "packageManager": "pnpm@12.3.4"
 }

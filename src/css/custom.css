@@ -1,0 +1,734 @@
+:root,
+[data-theme="light"] {
+  --ifm-color-primary: #874557;
+  --ifm-color-primary-dark: #783d4c;
+  --ifm-color-primary-darker: #713949;
+  --ifm-color-primary-darkest: #5d2f3c;
+  --ifm-color-primary-light: #985568;
+  --ifm-color-primary-lighter: #a66475;
+  --ifm-color-primary-lightest: #c68b98;
+  --ifm-font-family-base: "Noto Sans SC", "PingFang SC", "Microsoft YaHei", ui-sans-serif, system-ui, sans-serif;
+  --ifm-heading-font-weight: 650;
+  --ifm-background-color: #f9f7f2;
+  --ifm-background-surface-color: #fffdf9;
+  --ifm-navbar-background-color: rgba(255, 253, 249, 0.94);
+  --ifm-footer-background-color: #eee9e0;
+  --shou-bg: #f9f7f2;
+  --shou-surface: #fffdf9;
+  --shou-surface-muted: #f2eee7;
+  --shou-line: #dfd7cd;
+  --shou-line-strong: #b9a9a3;
+  --shou-text: #292525;
+  --shou-muted: #615858;
+  --shou-faint: #7b6f6e;
+  --shou-accent: #874557;
+  --shou-accent-soft: rgba(135, 69, 87, 0.1);
+  --shou-warm: #916f38;
+  --shou-map-bg: #fff;
+  --shou-map-text: #292525;
+}
+
+[data-theme="dark"] {
+  --ifm-color-primary: #d895a4;
+  --ifm-color-primary-dark: #cf7e91;
+  --ifm-color-primary-darker: #ca7286;
+  --ifm-color-primary-darkest: #b44f68;
+  --ifm-color-primary-light: #e1aebb;
+  --ifm-color-primary-lighter: #e7bfc9;
+  --ifm-color-primary-lightest: #f0d6dc;
+  --ifm-background-color: #1b1c20;
+  --ifm-background-surface-color: #23252a;
+  --ifm-navbar-background-color: rgba(27, 28, 32, 0.94);
+  --ifm-footer-background-color: #15161a;
+  --shou-bg: #1b1c20;
+  --shou-surface: #23252a;
+  --shou-surface-muted: #2a2c32;
+  --shou-line: #3a3b43;
+  --shou-line-strong: #625b61;
+  --shou-text: #f0ecec;
+  --shou-muted: #c1b9bc;
+  --shou-faint: #9b9196;
+  --shou-accent: #e2a0ae;
+  --shou-accent-soft: rgba(226, 160, 174, 0.14);
+  --shou-warm: #e0bb76;
+  --shou-map-bg: #242424;
+  --shou-map-text: #eee;
+}
+
+html {
+  min-height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at 86% -8%, rgba(135, 69, 87, 0.1), transparent 32rem),
+    radial-gradient(circle at 4% 42%, rgba(145, 111, 56, 0.06), transparent 28rem), var(--shou-bg);
+  color: var(--shou-text);
+}
+
+body::selection {
+  color: var(--shou-surface);
+  background: var(--shou-accent);
+}
+
+#__docusaurus,
+.main-wrapper,
+.docPage,
+.docRoot,
+.docMainContainer,
+.docItemContainer {
+  min-height: 100vh;
+  background: var(--shou-bg);
+}
+
+.main-wrapper {
+  background: transparent;
+}
+
+.navbar {
+  border-bottom: 1px solid var(--shou-line);
+  box-shadow: 0 1px 0 rgba(50, 35, 38, 0.02);
+  backdrop-filter: blur(18px);
+}
+
+.navbar__brand {
+  gap: 0.65rem;
+}
+
+.navbar__logo {
+  border: 1px solid var(--shou-line-strong);
+  border-radius: 0.55rem;
+}
+
+.navbar__title,
+.navbar__link {
+  color: var(--shou-text);
+}
+
+.navbar__title {
+  font-size: 0.95rem;
+  letter-spacing: -0.02em;
+}
+
+.navbar__link {
+  font-size: 0.82rem;
+}
+
+.navbar__link:hover,
+.navbar__link--active,
+.navbar__toggle:hover {
+  color: var(--shou-accent);
+}
+
+.navbar__items--right {
+  align-items: center;
+  gap: 0.55rem;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+@media (min-width: 997px) {
+  .navbar__items--right > *,
+  .navbar__items--right .navbar__link {
+    display: inline-flex;
+    align-items: center;
+  }
+}
+
+.docSidebarContainer {
+  position: sticky;
+  top: var(--ifm-navbar-height);
+  height: calc(100vh - var(--ifm-navbar-height));
+  border-right: 1px solid var(--shou-line);
+  background: color-mix(in srgb, var(--shou-surface-muted) 85%, transparent);
+  overflow-y: auto;
+  scrollbar-color: var(--shou-line-strong) transparent;
+  scrollbar-width: thin;
+}
+
+.theme-doc-sidebar-container {
+  position: static;
+  height: auto;
+  border: 0;
+  background: transparent;
+}
+
+.theme-doc-sidebar-container .menu {
+  padding: 0.75rem 0.8rem 1.8rem;
+}
+
+.theme-doc-sidebar-container .menu__link,
+.theme-doc-sidebar-container .menu__list-item-collapsible {
+  border-radius: 0.35rem;
+}
+
+.theme-doc-sidebar-container .menu__link {
+  color: var(--shou-muted);
+  font-size: 0.84rem;
+}
+
+.theme-doc-sidebar-container .menu__link:hover,
+.theme-doc-sidebar-container .menu__link--active,
+.theme-doc-sidebar-container .menu__list-item-collapsible:hover {
+  color: var(--shou-text);
+  background: var(--shou-accent-soft);
+}
+
+.theme-doc-sidebar-container .menu__link--active {
+  box-shadow: inset 3px 0 0 var(--shou-accent);
+}
+
+.theme-doc-sidebar-container .menu__caret::before {
+  background-size: 1.1rem 1.1rem;
+}
+
+.shou-doc-item-row {
+  align-items: flex-start;
+}
+
+.shou-doc-item-main {
+  min-width: 0;
+  padding-top: 1.35rem;
+  padding-bottom: 3rem;
+}
+
+.shou-doc-item-main--with-toc {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.shou-doc-item-container {
+  max-width: 980px;
+  margin-inline: auto;
+}
+
+.shou-doc-item-container article > *:first-child,
+.shou-doc-item-container article header + * {
+  margin-top: 0;
+}
+
+.shou-doc-toc-column {
+  align-self: stretch;
+  flex: 0 0 25%;
+  max-width: 25%;
+  min-width: 0;
+  padding-top: 1.55rem;
+  padding-bottom: 2rem;
+}
+
+.shou-doc-toc-panel {
+  position: sticky;
+  top: calc(var(--ifm-navbar-height) + 1.25rem);
+  max-height: calc(100vh - var(--ifm-navbar-height) - 2.5rem);
+  padding: 0.75rem 0.85rem 1rem;
+  border-left: 1px solid var(--shou-line);
+  overflow: auto;
+  scrollbar-color: var(--shou-line-strong) transparent;
+  scrollbar-width: thin;
+}
+
+.shou-doc-toc-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 0.65rem;
+  color: var(--shou-text);
+  font-size: 0.78rem;
+  font-weight: 650;
+}
+
+.shou-doc-toc-toggle,
+.shou-doc-toc-expand {
+  min-height: 2rem;
+  padding: 0.3rem 0.55rem;
+  border: 1px solid var(--shou-line-strong);
+  border-radius: 0.35rem;
+  color: var(--shou-muted);
+  background: var(--shou-surface);
+  font: inherit;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition:
+    color 160ms ease,
+    border-color 160ms ease,
+    background 160ms ease;
+}
+
+.shou-doc-toc-toggle:hover,
+.shou-doc-toc-toggle:focus-visible,
+.shou-doc-toc-expand:hover,
+.shou-doc-toc-expand:focus-visible {
+  border-color: var(--shou-accent);
+  color: var(--shou-accent);
+  background: var(--shou-accent-soft);
+}
+
+.shou-doc-toc-expand {
+  position: fixed;
+  z-index: 15;
+  top: calc(var(--ifm-navbar-height) + 1.25rem);
+  right: 1rem;
+  box-shadow: 0 0.3rem 1rem rgba(40, 30, 34, 0.12);
+}
+
+.theme-doc-toc-desktop {
+  margin-top: 0;
+}
+
+.table-of-contents {
+  font-size: 0.78rem;
+}
+
+.table-of-contents__link {
+  color: var(--shou-muted);
+}
+
+.table-of-contents__link:hover,
+.table-of-contents__link--active {
+  color: var(--shou-accent);
+}
+
+.theme-doc-markdown {
+  max-width: none;
+  color: var(--shou-text);
+  font-size: 0.98rem;
+  line-height: 1.85;
+}
+
+.theme-doc-markdown h1,
+.theme-doc-markdown h2,
+.theme-doc-markdown h3,
+.theme-doc-markdown h4 {
+  color: var(--shou-text);
+  letter-spacing: -0.025em;
+}
+
+.theme-doc-markdown h1 {
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.16;
+}
+
+.theme-doc-markdown h2 {
+  margin-top: 2.8rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--shou-line);
+  font-size: clamp(1.45rem, 2.5vw, 2.15rem);
+}
+
+.theme-doc-markdown h3 {
+  margin-top: 2rem;
+  font-size: 1.35rem;
+}
+
+.theme-doc-markdown p,
+.theme-doc-markdown li {
+  color: var(--shou-muted);
+}
+
+.theme-doc-markdown strong,
+.theme-doc-markdown th {
+  color: var(--shou-text);
+}
+
+.theme-doc-markdown a {
+  color: var(--shou-accent);
+  text-underline-offset: 0.16em;
+}
+
+.theme-doc-markdown a:hover {
+  color: var(--ifm-color-primary-light);
+}
+
+.theme-doc-markdown code {
+  border: 1px solid var(--shou-line);
+  color: var(--shou-accent);
+  background: var(--shou-accent-soft);
+}
+
+.theme-doc-markdown pre {
+  border: 1px solid var(--shou-line);
+  box-shadow: 0 0.8rem 2.5rem rgba(34, 28, 31, 0.08);
+}
+
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--shou-line);
+  background: var(--shou-surface);
+  font-size: 0.9rem;
+}
+
+.theme-doc-markdown table th {
+  background: var(--shou-accent-soft);
+}
+
+.theme-doc-markdown table td,
+.theme-doc-markdown table th {
+  border-color: var(--shou-line);
+}
+
+.theme-doc-markdown blockquote {
+  border-left-color: var(--shou-accent);
+  color: var(--shou-muted);
+  background: var(--shou-accent-soft);
+}
+
+.alert {
+  border-color: var(--shou-line-strong);
+  background: var(--shou-accent-soft);
+}
+
+.pagination-nav__link {
+  border-color: var(--shou-line);
+  background: var(--shou-surface);
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--shou-accent);
+}
+
+.theme-doc-breadcrumbs {
+  font-size: 0.76rem;
+}
+
+.footer {
+  border-top: 1px solid var(--shou-line);
+  background: var(--ifm-footer-background-color);
+}
+
+.footer__title,
+.footer__item,
+.footer__link-item,
+.footer__copyright {
+  color: var(--shou-muted);
+}
+
+.footer__link-item:hover {
+  color: var(--shou-accent);
+}
+
+/* The GPA calculator keeps its fields usable at the same density on desktop and mobile. */
+.gpa-calculator {
+  margin: 1.5rem 0;
+  padding: 1.25rem;
+  border: 1px solid var(--shou-line);
+  border-radius: 0.7rem;
+  background: var(--shou-surface);
+  color: var(--shou-text);
+}
+
+.gpa-intro {
+  margin-top: 0;
+  color: var(--shou-muted);
+}
+
+.gpa-course {
+  min-width: 0;
+  margin: 1rem 0;
+  padding: 1rem;
+  border: 1px solid var(--shou-line);
+  border-radius: 0.55rem;
+}
+
+.gpa-course legend {
+  padding: 0 0.4rem;
+  color: var(--shou-text);
+  font-weight: 650;
+}
+
+.gpa-fields {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 0.7fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.75rem;
+}
+
+.gpa-fields label {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 0.4rem;
+  color: var(--shou-muted);
+  font-size: 0.9rem;
+}
+
+.gpa-calculator input:not([type="checkbox"]),
+.gpa-calculator select {
+  box-sizing: border-box;
+  width: 100%;
+  min-width: 0;
+  min-height: 2.75rem;
+  padding: 0.5rem;
+  border: 1px solid var(--shou-line-strong);
+  border-radius: 0.35rem;
+  color: var(--shou-text);
+  background: var(--shou-surface-muted);
+  font: inherit;
+}
+
+.gpa-calculator input::placeholder {
+  color: var(--shou-faint);
+}
+
+.gpa-calculator button {
+  min-height: 2.75rem;
+  padding: 0.45rem 0.85rem;
+  border: 1px solid var(--shou-line-strong);
+  border-radius: 0.35rem;
+  color: var(--shou-text);
+  background: var(--shou-surface-muted);
+  font: inherit;
+  cursor: pointer;
+}
+
+.gpa-calculator button:hover {
+  border-color: var(--shou-accent);
+  color: var(--shou-accent);
+}
+
+.gpa-calculator :is(input, select, button):focus-visible {
+  outline: 2px solid var(--shou-accent);
+  outline-offset: 2px;
+}
+
+.gpa-row-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-top: 0.75rem;
+  color: var(--shou-muted);
+  font-size: 0.9rem;
+}
+
+.gpa-checkbox {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.75rem;
+}
+
+.gpa-checkbox input {
+  accent-color: var(--shou-accent);
+}
+
+.gpa-add {
+  color: var(--shou-accent) !important;
+  background: var(--shou-accent-soft) !important;
+}
+
+.gpa-result {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.55rem;
+  background: var(--shou-surface-muted);
+}
+
+.gpa-result strong {
+  color: var(--shou-accent);
+  font-size: 1.3rem;
+}
+
+.gpa-result .gpa-method {
+  margin: 0 0 0.5rem;
+  color: var(--shou-faint);
+  font-size: 0.9rem;
+}
+
+.gpa-result p {
+  margin-bottom: 0;
+  color: var(--shou-muted);
+}
+
+.gpa-error {
+  margin-bottom: 0;
+  color: var(--shou-accent) !important;
+  font-weight: 650;
+}
+
+.gpa-note {
+  margin-bottom: 0;
+  color: var(--shou-faint) !important;
+  font-size: 0.9rem;
+}
+
+/* CampusMap is an SSR-readable shell that becomes an interactive MapLibre map in the browser. */
+.osm-map {
+  --map-bg: var(--shou-map-bg);
+  --map-text: var(--shou-map-text);
+  position: relative;
+  width: 100%;
+  min-height: 12.5rem;
+  margin: 1rem 0;
+  border: 1px solid var(--shou-line-strong);
+  border-radius: 0.55rem;
+  overflow: hidden;
+  background: var(--map-bg);
+}
+
+.osm-map--dark {
+  --map-bg: #242424;
+  --map-text: #eee;
+  color-scheme: dark;
+}
+
+.osm-map__canvas {
+  width: 100%;
+  height: 100%;
+}
+
+.osm-map__fallback {
+  display: grid;
+  min-height: inherit;
+  place-content: center;
+  gap: 0.35rem;
+  padding: 1.5rem;
+  color: var(--map-text);
+  text-align: center;
+}
+
+.osm-map__fallback p {
+  max-width: 42rem;
+  margin: 0;
+  color: color-mix(in srgb, var(--map-text) 78%, transparent);
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.osm-map__fallback a {
+  color: var(--shou-accent);
+  font-size: 0.9rem;
+}
+
+.osm-map :is(.maplibregl-ctrl-group, .maplibregl-ctrl-attrib) {
+  border-color: var(--shou-line-strong);
+  color: var(--map-text);
+  background: var(--map-bg);
+}
+
+.osm-map .maplibregl-ctrl-attrib a {
+  color: var(--map-text);
+}
+
+.osm-map--dark .maplibregl-ctrl-icon {
+  filter: invert(1);
+}
+
+.osm-map__status,
+.osm-map__error {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 1rem;
+  color: var(--map-text);
+  background: color-mix(in srgb, var(--map-bg) 92%, transparent);
+}
+
+.osm-map__status {
+  display: grid;
+  place-items: center;
+}
+
+.osm-map__error {
+  inset: 0 3rem auto 0;
+  border-bottom: 1px solid var(--shou-line);
+  color: var(--shou-accent);
+}
+
+@media (max-width: 996px) {
+  .docSidebarContainer {
+    position: fixed;
+    z-index: 100;
+    top: var(--ifm-navbar-height);
+    height: calc(100vh - var(--ifm-navbar-height));
+  }
+
+  .shou-doc-item-main,
+  .shou-doc-item-main--with-toc {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .shou-doc-toc-column {
+    display: none;
+  }
+
+  .shou-doc-toc-expand {
+    display: none;
+  }
+
+  .shou-doc-item-container {
+    max-width: none;
+  }
+
+  .gpa-fields {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar__title {
+    font-size: 0.86rem;
+  }
+
+  .navbar__items--right {
+    gap: 0.25rem;
+  }
+
+  .shou-doc-item-main {
+    padding-top: 1rem;
+  }
+
+  .theme-doc-markdown {
+    font-size: 0.95rem;
+  }
+
+  .theme-doc-markdown h1 {
+    font-size: 2rem;
+  }
+
+  .theme-doc-markdown h2 {
+    margin-top: 2.2rem;
+  }
+
+  .gpa-calculator,
+  .gpa-course {
+    padding: 0.75rem;
+  }
+
+  .gpa-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .gpa-row-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .gpa-row-actions > button {
+    width: 100%;
+  }
+
+  .osm-map__fallback {
+    padding: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}

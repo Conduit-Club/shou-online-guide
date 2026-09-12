@@ -15,7 +15,8 @@ pnpm = "12.3.4.*"
 install = "pnpm install --frozen-lockfile"
 dev = { cmd = "pnpm run docs:dev", depends-on = ["install"] }
 build = { cmd = "pnpm run docs:build", depends-on = ["install"] }
-start = { cmd = "pnpm exec serve docs/.vuepress/dist --listen 8080", depends-on = ["build"] }
+start = { cmd = "pnpm run serve", depends-on = ["build"] }
 fmt = { cmd = "pnpm run fmt", depends-on = ["install"] }
 fmt-check = { cmd = "pnpm run fmt:check", depends-on = ["install"] }
 lint = { cmd = "pnpm run lint", depends-on = ["install"] }
+test-gpa = { cmd = "pnpm run test:gpa", depends-on = ["install"] }

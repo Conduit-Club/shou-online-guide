@@ -2,7 +2,7 @@
 
 本手册是一个面向上海海洋大学学生、教师与校友的校园生活手册，提供可靠、易查找的校内信息入口。
 
-本项目由南科手册改编而来，目前正处于内容迁移与重建阶段。通用经验会保留，涉及学校制度、地址、系统、联系方式和时间表的内容必须重新核验后才能发布。
+本项目由南科手册改编而来，目前正处于内容迁移与重建阶段，使用 Docusaurus 生成静态文档站。通用经验会保留，涉及学校制度、地址、系统、联系方式和时间表的内容必须重新核验后才能发布。
 
 ## 当前维护者
 
@@ -12,7 +12,7 @@
 
 ## 当前状态
 
-- VuePress 站点骨架和构建流程可用。
+- Docusaurus 站点骨架和构建流程可用。
 - 各栏目已建立海大版本占位页。
 - 海大专属资料正在收集、核验和重写。
 
@@ -21,12 +21,14 @@
 先安装 [Pixi](https://pixi.sh/latest/installation/)。项目由 Pixi 管理 Node.js 24、pnpm 12 和常用任务，无需另行全局安装 Node.js 或 pnpm。支持 Windows x64、Linux x64 和 macOS Intel / Apple Silicon。
 
 ```bash
-pixi run dev                 # 安装锁定依赖并启动开发服务器，支持热更新
+pixi run dev                 # 安装锁定依赖并启动 Docusaurus 开发服务器
 pixi run --locked build      # 安装锁定依赖并构建静态站点
-pixi run start               # 构建后在 http://localhost:8080 预览产物
+pixi run --locked start      # 构建后在 http://localhost:4173 预览产物
+pixi run --locked test-gpa   # 运行 GPA 计算逻辑测试
+pixi run --locked fmt-check  # 检查受管文件的格式
 ```
 
-首次运行会自动创建 `.pixi` 环境并安装依赖。构建产物位于 `docs/.vuepress/dist/`。传参示例：`pixi run dev --host 0.0.0.0`。代码格式检查使用 `pixi run --locked fmt-check`。
+首次运行会自动创建 `.pixi` 环境并安装依赖。构建产物位于 `build/`，可部署到 Vercel 或其他静态文件托管服务。需要指定规范站点 URL 时设置 `SITE_URL`，需要子路径部署时设置 `BASE_URL`；详细的插件迁移对应关系见 [`migration-notes/docusaurus-migration.md`](./migration-notes/docusaurus-migration.md)。
 
 如果你想贡献自己的一份力,建议先阅读 [AGENTS.md](./AGENTS.md) 了解开发流程和验证要求。
 

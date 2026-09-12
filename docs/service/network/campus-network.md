@@ -1,10 +1,15 @@
+---
+id: campus-network
+slug: /service/network/campus-network.html
+---
+
 # 校园无线网络
 
 上海海洋大学校园无线网络使用统一身份认证账号登录，覆盖临港校区（不含学生宿舍区域）室内所有建筑。
 
 本文旨在帮助学生、教职工、访客和校外来宾连接校园无线网络。
 
-::: tip 原文地址
+:::tip[原文地址]
 [海大新一代无线校园网（WiFi6）开通啦！](https://mp.weixin.qq.com/s/dHvYIw9cop1QO6P4PL4Pzw)（发布于2020-09-17）
 :::
 
@@ -27,13 +32,8 @@
 1. 打开“设置” → “WLAN”，搜索到对应网络。
 2. 在身份和密码中输入 **“统一身份认证账号和密码”** _（用户名为学号或工号，同网上办事大厅登录账号）_ 。
 3. 弹出证书提示时，点击“信任”，即可连接。
-
-<div align="center">
-
-![iOS连接示例图1](./campus-network-ios1.png)
-![iOS连接示例图2](./campus-network-ios2.png)
-
-</div>
+   ![iOS连接示例图1](./campus-network-ios1.png)
+   ![iOS连接示例图2](./campus-network-ios2.png)
 
 ### Android
 
@@ -41,30 +41,20 @@
 2. 在身份和密码中输入 **“统一身份认证账号和密码”** _（用户名为学号或工号，同网上办事大厅登录账号）_ 。
 3. 若提示证书/身份验证，通常按默认值即可；若无法连接，可确认 **“身份验证”** 选择 **“无”** 、 **“CA证书”** 选择 **“未指定”**。
 
-::: warning 特别提醒
+:::warning[特别提醒]
 不同Android系统所需设置不同，请格外注意身份验证和CA证书设置，通常为 _“无”_ 或 _“未指定”_。
 
 如设置错误，可能出现连接成功但无法上网的情况，尝试重新连接并修改设置。
 :::
-
-<div align="center">
-
 ![Android连接示例图1](./campus-network-android1.png)
-
-</div>
 
 ### Windows
 
 1. 点击右下角网络图标，搜索到对应网络。
 2. 在身份和密码中输入 **“统一身份认证账号和密码”** _（用户名为学号或工号，同网上办事大厅登录账号）_ 。
 3. 在弹出的“继续连接”确认页中点击“连接”。
-
-<div align="center">
-
-![Windows连接示例图1](./campus-network-windows1.png)
-![Windows连接示例图2](./campus-network-windows2.png)
-
-</div>
+   ![Windows连接示例图1](./campus-network-windows1.png)
+   ![Windows连接示例图2](./campus-network-windows2.png)
 
 ## 常见问题
 

@@ -1,5 +1,6 @@
 ---
-sidebarDepth: 0
+id: courses-and-gpa
+slug: /study/courses-and-gpa.html
 ---
 
 # 大学学什么：课程、学分与 GPA

@@ -1,6 +1,6 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import { shouGradePoint, summarizeCourses } from "../docs/.vuepress/components/gpa.mjs";
+import { shouGradePoint, summarizeCourses } from "../src/components/gpa.mjs";
 
 const course = (credits, value, mode = "percent", include = true) => ({
   name: "测试课程",

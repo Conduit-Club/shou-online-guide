@@ -1,0 +1,81 @@
+/** @type {import('@docusaurus/plugin-content-docs').SidebarsConfig} */
+const sidebars = {
+  manualSidebar: [
+    { type: "doc", id: "intro", label: "🏠水专手册" },
+    { type: "doc", id: "freshman-guide/freshman-guide", label: "📚新生指南" },
+    {
+      type: "category",
+      label: "🎓学习与发展",
+      link: { type: "doc", id: "study/study" },
+      collapsed: false,
+      items: [
+        { type: "doc", id: "study/courses-and-gpa", label: "课程、学分与 GPA" },
+        { type: "doc", id: "study/learning-sites", label: "刷 GPA 实用网站" },
+        { type: "doc", id: "study/paper-tools", label: "发论文实用工具" },
+      ],
+    },
+    {
+      type: "category",
+      label: "🧰服务与技巧",
+      link: { type: "doc", id: "service/service" },
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { type: "doc", id: "service/sid/student-id", label: "学号的意义" },
+        { type: "doc", id: "service/campus-card/campus-card", label: "校园卡与学生证" },
+        { type: "doc", id: "service/face-registration/face-registration", label: "人脸采集与门禁" },
+        {
+          type: "category",
+          label: "校园网络",
+          link: { type: "doc", id: "service/network/network" },
+          collapsed: true,
+          items: [{ type: "doc", id: "service/network/campus-network", label: "校园无线网络" }],
+        },
+        { type: "doc", id: "service/teaching/printer", label: "打印机" },
+        { type: "doc", id: "service/communication/email", label: "电子邮件" },
+        { type: "doc", id: "service/packages/package-services", label: "快递收发" },
+        { type: "doc", id: "service/medical/medical", label: "就医指南" },
+        {
+          type: "category",
+          label: "软件授权",
+          link: { type: "doc", id: "service/software-licenses/software-licenses" },
+          collapsed: true,
+          items: [
+            { type: "doc", id: "service/software-licenses/purchased-software", label: "学校已购买的软件" },
+            { type: "doc", id: "service/software-licenses/education-email", label: "教育邮箱福利" },
+          ],
+        },
+        { type: "doc", id: "service/library/library", label: "图书馆" },
+        { type: "doc", id: "service/what-to-buy/shopping-guide", label: "什么值得买" },
+        { type: "doc", id: "service/document-templates", label: "文档模板" },
+        { type: "doc", id: "service/official-entrances", label: "常用入口总览" },
+      ],
+    },
+    { type: "doc", id: "canteen/canteen", label: "🍽️食堂" },
+    { type: "doc", id: "facilities/campus-facilities", label: "📍设施" },
+    { type: "doc", id: "facilities/campus-map", label: "🗺️校园地图" },
+    {
+      type: "category",
+      label: "🚇交通",
+      link: { type: "doc", id: "transport/transport" },
+      collapsible: true,
+      collapsed: true,
+      items: [
+        { type: "doc", id: "transport/airports", label: "机场到校" },
+        { type: "doc", id: "transport/railway-stations", label: "火车站到校" },
+        { type: "doc", id: "transport/driving", label: "自驾到校" },
+      ],
+    },
+    { type: "doc", id: "surroundings/campus-surroundings", label: "🧭周边出行" },
+    { type: "doc", id: "contact/contact", label: "☎️黄页" },
+    { type: "doc", id: "emergency/emergency", label: "🚨应急" },
+    { type: "doc", id: "clubs/clubs", label: "🎪社团活动" },
+    { type: "doc", id: "media/media", label: "📰媒体与网站" },
+    { type: "doc", id: "calendar/calendar", label: "📅校历" },
+    { type: "doc", id: "site-help/contribution-template", label: "📝贡献模板" },
+    { type: "doc", id: "site-help/site-help", label: "❓站点帮助" },
+    { type: "doc", id: "about/about", label: "ℹ️关于" },
+  ],
+};
+
+module.exports = sidebars;

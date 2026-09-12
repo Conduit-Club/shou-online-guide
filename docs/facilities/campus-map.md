@@ -1,8 +1,13 @@
+---
+id: campus-map
+slug: /facilities/campus-map.html
+---
+
 # 校园地图
 
 ## 交互式地图
 
-<CampusMap :center="[121.89284, 30.88462]" :zoom="15" height="480px" pmtiles="/maps/campus.pmtiles" />
+<CampusMap center={[121.89284, 30.88462]} zoom={15} height="480px" pmtiles="/maps/campus.pmtiles" />
 
 ## 校园总平图
 
@@ -14,7 +19,7 @@
 - [后勤与基建管理处原页面](https://hqc.shou.edu.cn/2024/0822/c9765a333088/page.htm)
 - [学校官网校园地图栏目](https://www.shou.edu.cn/xydt/list.htm)
 
-::: warning 仅作参考
+:::warning[仅作参考]
 地图来自学校公开页面，发布于 2025 年 9 月。校园建设、道路和楼宇用途可能变化；到校后请以现场标识、学校通知和最新地图为准。
 :::
 

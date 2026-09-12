@@ -4,7 +4,7 @@
 
 ## 当前进展
 
-- [x] VuePress + Vite 站点可用，已配置 Pixi、pnpm、PWA 和中文主题。
+- [x] Docusaurus 站点可用，已配置 Pixi、pnpm、PWA 和中文主题。
 - [x] GitHub Actions 构建检查与 Vercel 部署配置已完成。
 - [x] 主要栏目、导航、贡献模板和许可说明已建立。
 - [x] 交通、校园周边、常用入口、校园地图、校历和学号说明已有基础内容。

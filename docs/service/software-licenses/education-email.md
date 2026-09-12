@@ -1,14 +1,16 @@
+---
+id: education-email
+slug: /service/software-licenses/education-email.html
+---
+
 # 教育邮箱福利
 
 > 学校邮箱可以作为部分服务的学生身份凭证，但不等于自动获得所有教育优惠。
+> :::tip[核验]
+> **最近核验日期：2026-09-08**。
+> :::
 
-[[toc]]
-
-::: tip 核验
-**最近核验日期：2026-09-08**。
-:::
-
-::: warning 申请前确认资格
+:::warning[申请前确认资格]
 以下核验的是服务商公开政策，未确认上海海洋大学邮箱在各服务中都能通过认证，也未实际申请或兑换。请使用学校当前发放的学生邮箱，按官方要求验证在读身份；学校识别、地区可用性和最终权益以申请结果为准。
 :::
 
@@ -107,7 +109,7 @@ Tableau 适合学习数据分析与可视化。当前[Tableau for Students](http
 
 本次未确认上海海洋大学是否为学生提供相关订阅，也未确认可分配的计划。请先向学校[信息化服务部门](/contact/)核实，再按 Microsoft 官方流程验证。资格通常随在读身份持续，并可能重新验证；资格结束后，学校账号的网页版应用、OneDrive 等服务可能停用，离校前应导出个人资料。
 
-学校统一购买的软件与授权另见[学校已购买的软件](./purchased.md)；邮箱开通与使用说明另见[电子邮件](/service/communication/email.html)。
+学校统一购买的软件与授权另见[学校已购买的软件](/service/software-licenses/purchased.html)；邮箱开通与使用说明另见[电子邮件](/service/communication/email.html)。
 
 ## 申请与到期检查
 

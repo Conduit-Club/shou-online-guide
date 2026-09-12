@@ -1,0 +1,374 @@
+{
+  "migrationDate": "2026-09-12",
+  "sourceMarkdownCount": 39,
+  "targetMarkdownCount": 39,
+  "sourceReadmeCount": 24,
+  "targetReadmeCount": 0,
+  "urlMappings": [
+    {
+      "source": "docs/README.md",
+      "target": "docs/intro.md",
+      "id": "intro",
+      "slug": "/",
+      "docId": "intro"
+    },
+    {
+      "source": "docs/about/README.md",
+      "target": "docs/about/project-overview.md",
+      "id": "about",
+      "slug": "/about/",
+      "docId": "about/about"
+    },
+    {
+      "source": "docs/calendar/README.md",
+      "target": "docs/calendar/academic-calendar.md",
+      "id": "calendar",
+      "slug": "/calendar/",
+      "docId": "calendar/calendar"
+    },
+    {
+      "source": "docs/canteen/README.md",
+      "target": "docs/canteen/campus-dining.md",
+      "id": "canteen",
+      "slug": "/canteen/",
+      "docId": "canteen/canteen"
+    },
+    {
+      "source": "docs/clubs/README.md",
+      "target": "docs/clubs/student-clubs.md",
+      "id": "clubs",
+      "slug": "/clubs/",
+      "docId": "clubs/clubs"
+    },
+    {
+      "source": "docs/contact/README.md",
+      "target": "docs/contact/contact-directory.md",
+      "id": "contact",
+      "slug": "/contact/",
+      "docId": "contact/contact"
+    },
+    {
+      "source": "docs/emergency/README.md",
+      "target": "docs/emergency/emergency-guide.md",
+      "id": "emergency",
+      "slug": "/emergency/",
+      "docId": "emergency/emergency"
+    },
+    {
+      "source": "docs/facilities/README.md",
+      "target": "docs/facilities/campus-facilities.md",
+      "id": "campus-facilities",
+      "slug": "/facilities/",
+      "docId": "facilities/campus-facilities"
+    },
+    {
+      "source": "docs/facilities/campus-map.md",
+      "target": "docs/facilities/campus-map.md",
+      "id": "campus-map",
+      "slug": "/facilities/campus-map.html",
+      "docId": "facilities/campus-map"
+    },
+    {
+      "source": "docs/freshman-guide/README.md",
+      "target": "docs/freshman-guide/freshman-guide.md",
+      "id": "freshman-guide",
+      "slug": "/freshman-guide/",
+      "docId": "freshman-guide/freshman-guide"
+    },
+    {
+      "source": "docs/media/README.md",
+      "target": "docs/media/campus-media.md",
+      "id": "media",
+      "slug": "/media/",
+      "docId": "media/media"
+    },
+    {
+      "source": "docs/service/README.md",
+      "target": "docs/service/service-guide.md",
+      "id": "service",
+      "slug": "/service/",
+      "docId": "service/service"
+    },
+    {
+      "source": "docs/service/campus-card/README.md",
+      "target": "docs/service/campus-card/campus-card.md",
+      "id": "campus-card",
+      "slug": "/service/campus-card/",
+      "docId": "service/campus-card/campus-card"
+    },
+    {
+      "source": "docs/service/communication/email.md",
+      "target": "docs/service/communication/email.md",
+      "id": "email",
+      "slug": "/service/communication/email.html",
+      "docId": "service/communication/email"
+    },
+    {
+      "source": "docs/service/document-templates.md",
+      "target": "docs/service/document-templates.md",
+      "id": "document-templates",
+      "slug": "/service/document-templates.html",
+      "docId": "service/document-templates"
+    },
+    {
+      "source": "docs/service/official-entrances.md",
+      "target": "docs/service/official-entrances.md",
+      "id": "official-entrances",
+      "slug": "/service/official-entrances.html",
+      "docId": "service/official-entrances"
+    },
+    {
+      "source": "docs/service/face-registration/README.md",
+      "target": "docs/service/face-registration/face-registration.md",
+      "id": "face-registration",
+      "slug": "/service/face-registration/",
+      "docId": "service/face-registration/face-registration"
+    },
+    {
+      "source": "docs/service/library/README.md",
+      "target": "docs/service/library/library-guide.md",
+      "id": "library",
+      "slug": "/service/library/",
+      "docId": "service/library/library"
+    },
+    {
+      "source": "docs/service/medical/README.md",
+      "target": "docs/service/medical/medical-guide.md",
+      "id": "medical",
+      "slug": "/service/medical/",
+      "docId": "service/medical/medical"
+    },
+    {
+      "source": "docs/service/network/campus-network.md",
+      "target": "docs/service/network/campus-network.md",
+      "id": "campus-network",
+      "slug": "/service/network/campus-network.html",
+      "docId": "service/network/campus-network"
+    },
+    {
+      "source": "docs/service/network/README.md",
+      "target": "docs/service/network/network-guide.md",
+      "id": "network",
+      "slug": "/service/network/",
+      "docId": "service/network/network"
+    },
+    {
+      "source": "docs/service/packages/README.md",
+      "target": "docs/service/packages/package-services.md",
+      "id": "package-services",
+      "slug": "/service/packages/",
+      "docId": "service/packages/package-services"
+    },
+    {
+      "source": "docs/service/sid/README.md",
+      "target": "docs/service/sid/student-id.md",
+      "id": "student-id",
+      "slug": "/service/sid/",
+      "docId": "service/sid/student-id"
+    },
+    {
+      "source": "docs/service/software-licenses/education-email.md",
+      "target": "docs/service/software-licenses/education-email.md",
+      "id": "education-email",
+      "slug": "/service/software-licenses/education-email.html",
+      "docId": "service/software-licenses/education-email"
+    },
+    {
+      "source": "docs/service/software-licenses/purchased.md",
+      "target": "docs/service/software-licenses/purchased.md",
+      "id": "purchased-software",
+      "slug": "/service/software-licenses/purchased.html",
+      "docId": "service/software-licenses/purchased-software"
+    },
+    {
+      "source": "docs/service/software-licenses/README.md",
+      "target": "docs/service/software-licenses/software-licenses.md",
+      "id": "software-licenses",
+      "slug": "/service/software-licenses/",
+      "docId": "service/software-licenses/software-licenses"
+    },
+    {
+      "source": "docs/service/teaching/printer.md",
+      "target": "docs/service/teaching/printer.md",
+      "id": "printer",
+      "slug": "/service/teaching/printer.html",
+      "docId": "service/teaching/printer"
+    },
+    {
+      "source": "docs/service/what-to-buy/README.md",
+      "target": "docs/service/what-to-buy/shopping-guide.md",
+      "id": "shopping-guide",
+      "slug": "/service/what-to-buy/",
+      "docId": "service/what-to-buy/shopping-guide"
+    },
+    {
+      "source": "docs/site-help/contribution-template.md",
+      "target": "docs/site-help/contribution-template.md",
+      "id": "contribution-template",
+      "slug": "/site-help/contribution-template.html",
+      "docId": "site-help/contribution-template"
+    },
+    {
+      "source": "docs/site-help/README.md",
+      "target": "docs/site-help/site-help.md",
+      "id": "site-help",
+      "slug": "/site-help/",
+      "docId": "site-help/site-help"
+    },
+    {
+      "source": "docs/study/README.md",
+      "target": "docs/study/study-guide.md",
+      "id": "study",
+      "slug": "/study/",
+      "docId": "study/study"
+    },
+    {
+      "source": "docs/study/courses-and-gpa.md",
+      "target": "docs/study/courses-and-gpa.md",
+      "id": "courses-and-gpa",
+      "slug": "/study/courses-and-gpa.html",
+      "docId": "study/courses-and-gpa"
+    },
+    {
+      "source": "docs/study/learning-sites.md",
+      "target": "docs/study/learning-sites.md",
+      "id": "learning-sites",
+      "slug": "/study/learning-sites.html",
+      "docId": "study/learning-sites"
+    },
+    {
+      "source": "docs/study/paper-tools.md",
+      "target": "docs/study/paper-tools.md",
+      "id": "paper-tools",
+      "slug": "/study/paper-tools.html",
+      "docId": "study/paper-tools"
+    },
+    {
+      "source": "docs/surroundings/README.md",
+      "target": "docs/surroundings/campus-surroundings.md",
+      "id": "campus-surroundings",
+      "slug": "/surroundings/",
+      "docId": "surroundings/campus-surroundings"
+    },
+    {
+      "source": "docs/transport/airports.md",
+      "target": "docs/transport/airports.md",
+      "id": "airports",
+      "slug": "/transport/airports.html",
+      "docId": "transport/airports"
+    },
+    {
+      "source": "docs/transport/driving.md",
+      "target": "docs/transport/driving.md",
+      "id": "driving",
+      "slug": "/transport/driving.html",
+      "docId": "transport/driving"
+    },
+    {
+      "source": "docs/transport/railway-stations.md",
+      "target": "docs/transport/railway-stations.md",
+      "id": "railway-stations",
+      "slug": "/transport/railway-stations.html",
+      "docId": "transport/railway-stations"
+    },
+    {
+      "source": "docs/transport/README.md",
+      "target": "docs/transport/transport-guide.md",
+      "id": "transport",
+      "slug": "/transport/",
+      "docId": "transport/transport"
+    }
+  ],
+  "assetSource": "docs/.vuepress/public",
+  "assetTarget": "assets",
+  "assetFileCount": 16,
+  "assets": [
+    {
+      "source": "docs/.vuepress/public/assets/campus-map-202509.jpg",
+      "target": "assets/assets/campus-map-202509.jpg",
+      "bytes": 353545
+    },
+    {
+      "source": "docs/.vuepress/public/assets/campus-map-202509.pdf",
+      "target": "assets/assets/campus-map-202509.pdf",
+      "bytes": 8522348
+    },
+    {
+      "source": "docs/.vuepress/public/assets/study/2025-cs-credits.png",
+      "target": "assets/assets/study/2025-cs-credits.png",
+      "bytes": 547389
+    },
+    {
+      "source": "docs/.vuepress/public/assets/study/2025-cs-credits.svg",
+      "target": "assets/assets/study/2025-cs-credits.svg",
+      "bytes": 11157
+    },
+    {
+      "source": "docs/.vuepress/public/manifest.webmanifest",
+      "target": "assets/manifest.webmanifest",
+      "bytes": 177
+    },
+    {
+      "source": "docs/.vuepress/public/maps/campus.pmtiles",
+      "target": "assets/maps/campus.pmtiles",
+      "bytes": 895171
+    },
+    {
+      "source": "docs/.vuepress/public/maps/canteens.json",
+      "target": "assets/maps/canteens.json",
+      "bytes": 698
+    },
+    {
+      "source": "docs/.vuepress/public/maps/edu.json",
+      "target": "assets/maps/edu.json",
+      "bytes": 5703
+    },
+    {
+      "source": "docs/.vuepress/public/maps/gates.json",
+      "target": "assets/maps/gates.json",
+      "bytes": 1329
+    },
+    {
+      "source": "docs/.vuepress/public/maps/grad-dorms.json",
+      "target": "assets/maps/grad-dorms.json",
+      "bytes": 1330
+    },
+    {
+      "source": "docs/.vuepress/public/maps/other.json",
+      "target": "assets/maps/other.json",
+      "bytes": 2220
+    },
+    {
+      "source": "docs/.vuepress/public/maps/public-transport.json",
+      "target": "assets/maps/public-transport.json",
+      "bytes": 1508
+    },
+    {
+      "source": "docs/.vuepress/public/maps/sports.json",
+      "target": "assets/maps/sports.json",
+      "bytes": 3165
+    },
+    {
+      "source": "docs/.vuepress/public/maps/undergrad-dorms.json",
+      "target": "assets/maps/undergrad-dorms.json",
+      "bytes": 2591
+    },
+    {
+      "source": "docs/.vuepress/public/maps/university.json",
+      "target": "assets/maps/university.json",
+      "bytes": 1478
+    },
+    {
+      "source": "docs/.vuepress/public/robot.txt",
+      "target": "assets/robot.txt",
+      "bytes": 27
+    }
+  ],
+  "notes": [
+    "All source body text is retained; VuePress [[toc]] markers and layout-only HTML wrappers were converted for Docusaurus MDX.",
+    "CampusMap and GpaCalculator remain as MDX components for src/theme/MDXComponents registration.",
+    "The old VuePress numeric heading aliases used by existing links are preserved with explicit Docusaurus heading IDs.",
+    "The five school entry links formerly repeated on the homepage are provided by the Docusaurus footer; the homepage keeps internal shortcuts.",
+    "PWA installation guidance avoids promising offline access; actual cache scope depends on the Docusaurus service-worker configuration."
+  ]
+}
